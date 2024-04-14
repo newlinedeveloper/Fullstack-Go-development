@@ -1,3 +1,91 @@
+### Frontend development
+
+### prerequisites
+
+
+```
+node js installation  
+
+https://nodejs.org/en/download/package-manager/
+
+node version: v18 LTS
+
+node --version
+
+npm --version
+
+
+npm i create-react-app - optional
+
+
+```
+
+### Create React js application
+
+```
+npx create-react-app web-app
+
+cd web-app
+
+npm run start
+
+```
+
+
+### Install Required Packages
+
+```
+npm install antd axios 
+
+```
+
+
+### Project structure
+
+```
+.
+└── src/
+    ├── Components/
+    │   └── Models/
+    │       ├── AddMemberModal.js
+    │       └── EditMemberModal.js
+    ├── Pages/
+    │   └── Dashboard/
+    │       └── index.js
+    ├── services/
+    │   ├── AxioInstance.js
+    │   └── Member.js
+    ├── App.js
+    ├── App.css
+    ├── index.js
+    └── index.css
+
+```
+
+### Create .env file in src folder
+
+```
+REACT_APP_API_URL=http://localhost:8000
+
+```
+
+
+### Add Api integration functionalities
+
+** create AxiosInstance.js file in Services folder**
+
+```
+import axios from "axios";
+
+export const AxiosInstance = axios.create({
+    baseURL: process.env.REACT_APP_API_URL
+});
+
+```
+
+** create Member.js file in Services folder**
+
+```
 import { AxiosInstance } from "./AxiosInstance";
 
 const config = {
@@ -56,4 +144,9 @@ export const deleteMemberApi = async (id) => {
         return error
     }
 }
+
+```
+
+
+
 
