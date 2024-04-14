@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Members-api",
+    "dateExported": "2024-04-14T08:40:42.431Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "cfbebcf1-7ca1-4e9d-b14a-c6743933d001",
+            "colId": "86d8731b-7c2e-40d0-a8db-9ed9e4bae0dc",
+            "containerId": "",
+            "name": "Get All Members",
+            "url": "http://localhost:8000/members",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-04-14T08:28:50.937Z",
+            "modified": "2024-04-14T08:29:44.979Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4620f0b1-bee7-41ad-9a9e-c2289dc867be",
+            "colId": "86d8731b-7c2e-40d0-a8db-9ed9e4bae0dc",
+            "containerId": "",
+            "name": "Create Member",
+            "url": "http://localhost:8000/member",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-14T08:30:10.221Z",
+            "modified": "2024-04-14T08:37:12.166Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"Name\" : \"npr\",\n  \"Email\" : \"npr@gamil.com\",\n  \"City\" : \"natham\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "09418dce-6c5a-4029-8d87-25e28142aa55",
+            "colId": "86d8731b-7c2e-40d0-a8db-9ed9e4bae0dc",
+            "containerId": "",
+            "name": "Get One Member",
+            "url": "http://localhost:8000/member/661b94740701232870d73306",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-04-14T08:33:06.114Z",
+            "modified": "2024-04-14T08:38:11.563Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a77e90f5-1474-49e2-80a8-c294ccfb3a83",
+            "colId": "86d8731b-7c2e-40d0-a8db-9ed9e4bae0dc",
+            "containerId": "",
+            "name": "Update Member",
+            "url": "http://localhost:8000/member/661b94740701232870d73306",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-04-14T08:33:18.293Z",
+            "modified": "2024-04-14T08:39:49.817Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"Name\" : \"veera26\",\n  \"Email\" : \"veera26@gamil.com\",\n  \"City\" : \"madurai\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4f7fc2b5-0ad7-4b39-bd0e-b58fea56dd1d",
+            "colId": "86d8731b-7c2e-40d0-a8db-9ed9e4bae0dc",
+            "containerId": "",
+            "name": "Delete Member",
+            "url": "http://localhost:8000/member/661b94740701232870d73306",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-04-14T08:33:53.063Z",
+            "modified": "2024-04-14T08:40:16.157Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
